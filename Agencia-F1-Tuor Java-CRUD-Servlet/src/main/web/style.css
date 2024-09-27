@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  overflow-x: hidden!;
+  
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+/*---- GERAL -----*/
+body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1265px;
+
+  background-color: #ffffff;
+}
+
+#bodySection {
+  max-width: 1300px;
+  background-color: rgba(248, 243, 234, 0.89);
+}
+
+.grid-container{  
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  background-image: url("../web/assets/bg.jpg")!important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 1rem;
+
+  border-radius: 30px 0px 30px 0px;
+  box-shadow: 4px 1px 4px 2px #00000059;
+}
+
+div#logo{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+nav#go-enter {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  overflow: hidden;
+}
+
+.image-assets {
+  padding-bottom: 1rem;
+}
+
+label {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.76);
+  padding: 2px;
+  border-radius: 5px;
+
+  margin-top: 1rem;
+}
+
+
+/*---- Caixa de texto Header -----*/
+.input-group {
+  padding-left: 8rem;
+  width: 75%;
+  padding-top: 2.5rem; 
+}
+
+/*---- Botão Caixa de texto Header -----*/
+.input-group-append{
+  display: block;
+}
+
+.btn-outline-secondary{
+  border-color: transparent;
+}
+
+/*---- Alinhamento links Menu Navbar -----*/  
+.mt-lg-0, .my-lg-0 {
+  margin-block: auto;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    padding-left: 9rem;
+  }
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+}
+
+/*---- Alinhamento e style link Sing in Navbar -----*/  
+#go-enter{
+  max-width: 656px;
+}
+
+#go-enter > a {
+  color: rgb(189, 28, 28);
+  font-weight: 500;
+  font-style: italic;
+  background-color: #ffffff33 ;
+  border-radius: 20px;
+  text-decoration: none; 
+  padding: .70rem;
+}
+
+#go-enter > a:hover {
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: rgb(189, 28, 28);
+  font-weight: 500;
+  font-style: italic;
+  background-color: #ffffff33 ;
+  border-radius: 20px;
+  margin: .51rem;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show >.nav-link {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+  font-style: italic;
+}
